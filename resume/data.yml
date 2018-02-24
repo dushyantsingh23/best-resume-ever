@@ -1,70 +1,79 @@
 /* #*/ export const PERSON = `
 name:
-  first: John
-  middle:
-  last: Doe
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
-position: Software Developer
+  first: Dushyant
+  middle: Singh
+  last: Jadaun
+about: Seeking a challenging position which will enable me to continuously learn, create, innovate and simultaneously contribute to the short and long term goals of the organization effectively.
+position: Senior Software Engineer
 
 birth:
-  year: 1990
-  location: New York
+  year: 1993
+  location: Bangalore
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
+- company: Adobe
+  position: Senior Software Engineer
+  timeperiod: since Nov 2017
+  aboutCompany: Adobe builds software for marketing and design
+  url: status.adobe.com
+  description: Working in a team to deliver product to monitor all services and solutions within adobe. Part of One Adobe initiative
 
-- company: Company B
-  position: Frontend Developer
-  timeperiod: January 2015 - December 2015
-  description: Fulfillment of extremely important tasks.
+- company: GoZefo
+  position: Full Stack Developer
+  timeperiod: Nov 2016 - July 2016
+  aboutCompany: Ecommerce for second hand goods
+  url: www.gozefo.com
+  description: Implemented features on website and created and designed new services for warehouse management and logistics. Revamped apis for cart and payments. Worked on Backend as well as Frontend
 
-- company: Company C
-  position: Trainee
-  timeperiod: March 2014 - December 2014
-  description: Making coffee and baking cookies.
+- company: Encashea (Aquired by HasiruDala)
+  position: Tech Lead
+  timeperiod: Feb 2016 - August 2016
+  aboutCompany: Encashea platform helps you encash your scrap at the ease of a few clicks
+  url: www.encashea.com
+  description: Created Android apps for booking and pickup. Involved in designing and implementing APIs and databases
+
+- company: Practo
+  position: Software Engineer
+  timeperiod: July 2015 - Feb 2016
+  aboutCompany: Online platform for booking doctor appointments and managing health history
+  url: www.practo.com
+  description: Worked on implementing features on Practo's doctor side app 'Practo Ray' for android
 
 education:
-- degree: Master of Arts
-  timeperiod: March 2012 - December 2013
-  description: Major in Hacking and Computer Penetration, University A, New York, USA.
-
-- degree: Bachelor of Science
-  timeperiod: March 2009 - December 2011
-  description: Major in Engineering, University B, Los Angeles, USA.
+- degree: Bachelor of Technology
+  timeperiod: April 2011 - June 2015
+  description: Major in Electronics and Communication, IIIT Allahabad
 
 # skill level goes 0 to 100
 skills:
-- name: HTML5
+- name: Java
   level: 99
-- name: CSS3
+- name: Dropwizard/Spring Boot
   level: 95
 - name: JavaScript
   level: 97
 - name: Node.js
   level: 93
-- name: Angular 2
+- name: Python
   level: 60
-- name: TypeScript
+- name: HTML/CSS
   level: 80
-- name: ES.Next
+- name: Android
   level: 70
 - name: Docker
   level: 99
-knowledge: Also proficient in Adobe Photoshop and Illustrator, grew up bilingual
-  (English and Klingon).
+- name: AWS
+  level: 99
+- name: SQL
+  level: 99
+
+knowledge: Also proficient in Adobe Photoshop, After Effects and MS Excel.
 
 contact:
-  email: john.doe@email.com
-  phone: 0123 456789
-  street: 1234 Broadway
-  city: New York
-  website: johndoe.com
-  github: johnyD
+  email: dushyant.bangalore@gmail.com
+  phone: +91 8147009478
+  website: in.linkedin.com/dushyantsingh23
+  github: dushyantsingh23
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
 lang: en
 `

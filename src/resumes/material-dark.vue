@@ -13,23 +13,23 @@
       </div>
       <div class="text">
         <ul>
-          <li> {{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</li>
+          <li> {{ lang.born }} {{person.birth.year}}</li>
         </ul>
       </div>
     </div>
 
-    <div class="item">
-      <div class="icon">
-        <i class="material-icons">location_city</i>
-      </div>
-      <div class="text">
-        <ul>
-          <li>{{person.contact.street}}</li>
-          <li>{{person.contact.city}}</li>
-        </ul>
-      </div>
-    </div>
-
+     <!-- <div class="item">
+   <div class="icon">
+     <i class="material-icons">location_city</i>
+   </div>
+   <div class="text">
+     <ul>
+       <li>{{person.contact.street}}</li>
+       <li>{{person.contact.city}}</li>
+     </ul>
+   </div>
+ </div>
+ -->
     <a :href="'tel:'+person.contact.phone">
       <div class="item">
         <div class="icon">
@@ -96,13 +96,17 @@
     <div class="title">
       <h2>{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
       <div>{{person.position}}</div>
+      <div class="about" style="text-transform:unset">{{person.about}}</div>
     </div>
+    
 
     <div class="section-headline">{{ lang.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
+        <div class="subheadline">{{experience.aboutCompany}}</div>
+        <div class="subheadline">{{experience.url}}</div>
         <p class="info">
           {{experience.description}}
         </p>
@@ -131,6 +135,13 @@ export default Vue.component(name, getVueOptions(name));
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
+.about {
+  color:rgba(0,0,0,0.541176);
+  display:block;
+  font-size:12px;
+  font-weight:250;
+  font-size:0.5em;
+}
 .resume {
   font-family:'Roboto' !important;
   background:#cccccc;
@@ -196,7 +207,7 @@ a {
   font-size:10pt;
   opacity:0.8;
   margin-left:20px;
-  margin-top:40px;
+  margin-top:20px;
   margin-bottom:20px;
   color:#3f3d3c;
 }
@@ -263,21 +274,21 @@ h4 {
     width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
-    margin-top:5px;
-    margin-bottom:5px;
+    padding:10px;
+    margin-top:3px;
+    margin-bottom:3px;
     display:inline-block;
-    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     .headline {
       font-weight:300;
       display:block;
-      font-size:15px;
+      font-size:14px;
       color:rgba(0,0,0,0.870588);
     }
     .subheadline {
       color:rgba(0,0,0,0.541176);
       display:block;
-      font-size:14px;
+      font-size:12px;
       font-weight:300;
     }
     .info {
