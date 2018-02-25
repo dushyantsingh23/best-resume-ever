@@ -35,10 +35,12 @@
       <h3>{{ lang.education }}</h3>
       <div class="education-block" v-for="education in person.education" :key="education.degree">
         <div class="row">
-          <span class="degree">{{education.degree}}</span>
+          <span class="degree">{{education.degree}},&nbsp; </span>
+          <span class="degree-timeperiod">{{education.timeperiod}} </span>
         </div>
         <div class="row">
-          <span class="degree-description">{{education.description}}</span>
+          <span class="degree-description">{{education.description}},&nbsp; </span>
+          <span class="score">{{education.score}}</span>
         </div>
       </div>
     </div>
@@ -84,7 +86,7 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 #resume3 {
   font-family:'Open Sans Condensed', sans-serif;
-  padding-bottom:50px;
+  padding-bottom:20px;
   a, a:focus, a:hover {
     color:black;
     text-decoration:none;
@@ -101,25 +103,25 @@ export default Vue.component(name, getVueOptions(name));
     border-width:600px 0 0 1500px;
     border-color:#006064 transparent transparent transparent;
     position:absolute;
-    left:-600px;
-    top:0;
+    left:-700px;
+    top:-200px;
   }
   .resume-header .person-header {
     position:absolute;
-    z-index:20;
-    right:15%;
-    top:200px;
+    right: -100px;
+    top:10px;
     .person-wrapper {
-      overflow:hidden;
+      overflow:visible;
       position:relative;
     }
     .img {
-      height:100%;
-      width:100px;
-      float:left;
+      height: 80%;
+      width:120px;
+      float:right;
       position:absolute;
-      top:0;
-      right:0;
+      visibility: visible;
+      top:7px;
+      left: -100px;
       background:url('../../resume/id.jpg');
       background-position:center;
       background-size:cover;
@@ -136,17 +138,14 @@ export default Vue.component(name, getVueOptions(name));
       text-align:right;
       line-height:1.0;
       font-weight:bold;
+      padding-right: 10px;
     }
     .position {
-      font-size:20px;
-      display:table-caption;
-      text-align:right;
-      line-height:1.0;
-      margin-top:10px;
+      margin-left:70px;
     }
   }
   .resume-content {
-    margin-top:435px;
+    margin-top:280px;
     margin-left:15%;
     width:70%;
     .experience .experience-block {
@@ -167,6 +166,14 @@ export default Vue.component(name, getVueOptions(name));
   .education-block {
     line-height:1;
     margin-bottom:10px;
+    .degree-timeperiod {
+      font-size:15px;
+      text-transform:none;
+    }
+    .score {
+      font-size:15px;
+      text-transform:uppercase;
+    }
     .row:first-child {
       font-size:20px;
       text-transform:uppercase;

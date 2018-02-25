@@ -9,6 +9,10 @@
   <div class="row">
     <div class="image center">
       <div class="img"></div>
+      <div class="row center experience-block">
+        <span class="company">{{lang.birthdate}}</span>
+        <span class="time-period">{{person.birth.date}}</span>
+      </div>
     </div>
   </div>
   <div class="left half">
@@ -73,7 +77,7 @@
 import Vue from 'vue';
 import { getVueOptions } from './options';
 
-let name = 'left-right';
+let name = 'pro';
 export default Vue.component(name, getVueOptions(name));
 </script>
 
@@ -140,6 +144,7 @@ export default Vue.component(name, getVueOptions(name));
     height:100px;
     margin-top:50px;
     margin-bottom:50px;
+    padding : 5px;
     .img {
       width:100%;
       height:100%;
@@ -148,6 +153,7 @@ export default Vue.component(name, getVueOptions(name));
       background-repeat:none;
       background-position:center;
       background-size:cover;
+      position: relative;
     }
   }
   .contact {
