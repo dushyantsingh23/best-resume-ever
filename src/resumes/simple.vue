@@ -27,6 +27,16 @@
       </div>
       <div class="skills">
         <span class="heading">{{lang.skills}}</span>
+        <div class="skill-section">
+          <div class="skills" v-for="skill in person.skills" :key="skill.name">
+            <div class="skill-block">
+              <span class="skill">{{skill.name}}</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-other">
+          <span>{{person.knowledge}} </span>
+        </div>
       </div>
       <div class="projects">
         <span class="heading">{{lang.projects}}</span>
@@ -38,7 +48,7 @@
         <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
           <span class="company row"> {{experience.company}}, <span class="location">{{experience.location}}</span></span>
           <span class="timeperiod row">{{experience.position}} , {{experience.timeperiod}}</span>
-          <span class="job-description row" v-for="description in experience.description" :key="description"> {{description}} </span>
+          <span class="job-description row" v-for="description in experience.description" :key="description"> - {{description}} </span>
         </div>
       </div>
       <div class="achievements">

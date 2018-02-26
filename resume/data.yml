@@ -3,8 +3,8 @@ name:
   first: Dushyant
   middle: Singh
   last: Jadaun
-about: Seeking a challenging position which will enable me to continuously learn, create, innovate and simultaneously contribute to the short and long term goals of the organization effectively.
-position: Senior Software Engineer
+  about: Seeking a challenging position which will enable me to continuously learn, create, innovate and simultaneously contribute to the short and long term goals of the organization effectively.
+  position: Senior Software Engineer
 
 birth:
   year: 1993
@@ -12,7 +12,7 @@ birth:
   location: Bangalore
 
 experience:
-- company: Adobe
+  - company: Adobe
   location: Bangalore
   position: Senior Software Engineer
   timeperiod: since Nov 2017
@@ -20,77 +20,89 @@ experience:
   url: status.adobe.com
   description: [ "Working in a team to deliver product to monitor all services and solutions within adobe. Part of One Adobe initiative"]
 
-- company: GoZefo
+  - company: GoZefo
   location: Bangalore
   position: Full Stack Developer
   timeperiod: Nov 2016 - July 2016
   aboutCompany: Ecommerce for second hand goods
   url: www.gozefo.com
-  description: ["Implemented features on website and created and designed new services for warehouse management and logistics. Revamped apis for cart and payments. Worked on Backend as well as Frontend"]
+  # description: ["Implemented features on website and created and designed new services for warehouse management and
+  # logistics. Revamped apis for cart and payments. Worked on Backend as well as Frontend",
+  # "Worked on warehouse application to add various functionality for QC, Sell, Inventory, Orders etc",
+  # "Worked on Marketing Dashboard which will be used by marketing team to publish real time updates on website",
+  # "Design and developed communication server for Zefo which would be responsible for all internal as well as customer communication.",
+  # "Tech Used: Java8, Hibernate, Jetty, MySQL, JQuery, EJS, MaterializeCSS, ReactJs, Redux, ImmutableJS, Express, NodeJS v4,Webpack server, npm"]
 
-- company: Encashea (Aquired by HasiruDala)
+  - company: Encashea (Aquired by HasiruDala)
   location: Bangalore
   position: Tech Lead
   timeperiod: Feb 2016 - August 2016
   aboutCompany: Encashea platform helps you encash your scrap at the ease of a few clicks
   url: www.encashea.com
-  description: ["Created Android apps for booking and pickup. Involved in designing and implementing APIs and databases"]
+  # description: ["Created Android apps for booking and pickup. Involved in designing and implementing APIs and databases",
+  # "Encashea App is the consumer facing application which is used to consumers to schedule a pickup and manage their encashea account. Ecpickup is used by our pickup boys for creating invoices."
+  # "Created APIs in Backend(Java, Spring, Hibernate) and respective view in Frontend(jQuery, HTML, CSS) for web. Worked on admin dashboard to add more functionality.",
+  # "Tools/Tech used: Android : Java8, Android Framework, Google Maps API, Google Places API, Google distance matrix API, Hibernate, Spring 4, Postgres, SQL, JQuery, HTML5, Javascript, CSS, Git, Amazon AWS, Redis"]
 
-- company: Practo
+  - company: Practo
   location: Bangalore
   position: Software Engineer
   timeperiod: July 2015 - Feb 2016
   aboutCompany: Online platform for booking doctor appointments and managing health history
   url: www.practo.com
-  description: ["Worked on implementing features on Practo's doctor side app 'Practo Ray' for android"]
+  # description: ["Worked on implementing features on Practo's doctor side app 'Practo Ray' for android",
+  # "Ray is used by thousands of doctors to manage their appointments and prescriptions. ",
+  # "As a part of a team, added Billing, Analytics, Treatment Plans, Prescription and many more features to the mobile application",
+  # "Tools/Tech Used : Java, Android SDK, Android Studio, JIRA, Slack, SQLite, Git, PHP, Symphony2"]
 
 education:
-- degree: Bachelor of Technology
+  - degree: Bachelor of Technology
   timeperiod: April 2011 - June 2015
   description: Major in Electronics and Communication, IIIT Allahabad
   score: CGPA 8.03
 
-- degree: Intermediate
+  - degree: Intermediate
   timeperiod: 2010 - 2011
   description: City Montessori School (CMS), Lucknow
   score: Percantage 90.25%
 
-- degree: High School
+  - degree: High School
   timeperiod: 2008 - 2009
   description: City Montessori School (CMS), Lucknow
   score: Percantage 95.20%
 
 # skill level goes 0 to 100
 skills:
-- name: Java
+  - name: Java
   level: 99
-- name: Dropwizard/Spring Boot
+  - name: Dropwizard/Spring Boot
   level: 95
-- name: JavaScript
+  - name: JavaScript
   level: 97
-- name: Node.js
+  - name: Node.js
   level: 93
-- name: Python
+  - name: Python
   level: 60
-- name: HTML/CSS
+  - name: HTML/CSS
   level: 80
-- name: Android
+  - name: Android
   level: 70
-- name: Docker
+  - name: Docker
   level: 99
-- name: AWS
+  - name: AWS
   level: 99
-- name: SQL
+  - name: SQL
   level: 99
 
-knowledge: Also proficient in Adobe Photoshop, After Effects and MS Excel.
+  knowledge: Also proficient in Adobe Photoshop, After Effects and MS Excel.
 
-contact:
-  email: dushyant.bangalore@gmail.com
-  phone: +91 8147009478
-  website: in.linkedin.com/dushyantsingh23
-  linkedin: in.linkedin.com/dushyantsingh23
-  github: dushyantsingh23
-# en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
-lang: en
-`
+  achievements:
+    -contact:
+      email: dushyant.bangalore@gmail.com
+      phone: +91 8147009478
+      website: in.linkedin.com/dushyantsingh23
+      linkedin: in.linkedin.com/dushyantsingh23
+      github: dushyantsingh23
+      # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
+      lang: en
+      `
