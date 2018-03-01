@@ -1,45 +1,41 @@
 <template>
-<div class="box" id="simple">
-  <div class="header">
-    <div class="row center">
-      <span class="name">{{person.name.first}} {{person.name.middle}} {{person.name.last}}</span>
+  <div class="box" id="simple">
+    <div class="header">
+      <div class="row center">
+        <span class="name">{{person.name.first}} {{person.name.middle}} {{person.name.last}}</span>
+      </div>
+      <div class="row center">
+        <span class="title">{{person.title}}</span>
+      </div>
+      <div class="row center">
+        <span class="contact">{{person.contact.email}} | {{person.contact.phone}} | {{person.contact.linkedin}} | {{person.contact.github}}</span>
+      </div>
+      <div class="row center">
+        <span class="about"> {{person.about}} </span>
+      </div>
     </div>
-    <div class="row center">
-      <span class="title">{{person.title}}</span>
-    </div>
-    <div class="row center">
-      <span class="contact">{{person.contact.email}} | {{person.contact.phone}}</span>
-    </div>
-    <div class="row center">
-      <span class="about"> {{person.about}} </span>
-    </div>
-  </div>
-  <div class="seperator"></div>
-  <div class="body">
-    <div class="left-col">
-      <div class="education">
-        <span class="heading">{{lang.education}}</span>
-        <div class="education-block" v-for="education in person.education" :key="education.degree">
-          <span class="degree row">{{education.degree}}</span>
-          <span class="timeperiod row">{{education.timeperiod}}, {{education.score}}</span>
-          <span class="degree-description row">{{education.description}}</span>
+    <div class="seperator"></div>
+    <div class="body">
+      <div class="left-col">
+        <div class="education">
+          <span class="heading">{{lang.education}}</span>
+          <div class="education-block" v-for="education in person.education" :key="education.degree">
+            <span class="degree row">{{education.degree}}</span>
+            <span class="timeperiod row">{{education.timeperiod}}, {{education.score}}</span>
+            <span class="degree-description row">{{education.description}}</span>
+          </div>
+        </div>
+        <div class="skills">
+          <span class="heading">{{lang.skills}}</span>
+          <div class="skills-block" v-for="skill in person.skills">
+            <span class="skill-row">{{skill.name}}</span>
+            <div class="skill-bar">
+              <div :style="'width: '+skill.level+'%'" class="level"> </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="skills">
-        <span class="heading">{{lang.skills}}</span>
-        <div class="skills-block" v-for="skill in person.skills">
-          <span class="skill-row">{{skill.name}}</span>
-          <!-- <div class="skill-bar">
-            <div :style="'width: '+skill.level+'%'" class="level"> </div>
-          </div> -->
-        </div>
-      </div>
-      <div class="contact">
-        <span class="heading">{{lang.contact}}</span>
-
-      </div>
-    </div>
-    <div class="right-col">
+      <div class="right-col">
       <div class="experience">
         <span class="heading">{{lang.experience}}</span>
         <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
@@ -69,7 +65,6 @@ let name = 'simple'; // TODO change name
 export default Vue.component(name, getVueOptions(name));
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
 
 html * {
@@ -98,13 +93,14 @@ html * {
 .contact {
   font-size: 17px;
   font-weight: 400;
-  color: #575757
+  color: #007ce2;
 }
 .about {
   font-size: 15px;
   line-height: 13px;
   display: inline-block;
   margin-top: 2px;
+
 }
 .seperator {
   background-color: #a30707;
@@ -213,7 +209,7 @@ html * {
       font-size: 14px;
       display: block;
       font-style: italic;
-      color: #0026ab;
+      color: #007ce2;
     }
   }
 }
@@ -223,14 +219,13 @@ html * {
     display: block;
 
     .achievement-row {
-        font-weight: 200;
-        font-size: 14px;
-        display: block;
-        font-family: 'Roboto Light';
+      font-weight: 200;
+      font-size: 14px;
+      display: block;
+      font-family: 'Roboto Light';
     }
   }
 }
-
 .skills {
   .skills-block {
     margin: 7px 0px;
@@ -253,7 +248,7 @@ html * {
       position:relative;
       width:100%;
       .level {
-        background:#00437a;
+        background:#007ce2;
         height:100%;
       }
     }
