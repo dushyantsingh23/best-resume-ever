@@ -27,19 +27,16 @@
       </div>
       <div class="skills">
         <span class="heading">{{lang.skills}}</span>
-        <div class="skill-section">
-          <div class="skills" v-for="skill in person.skills" :key="skill.name">
-            <div class="skill-block">
-              <span class="skill">{{skill.name}}</span>
-            </div>
-          </div>
-        </div>
-        <div class="skills-other">
-          <span>{{person.knowledge}} </span>
+        <div class="skills-block" v-for="skill in person.skills">
+          <span class="skill-row">{{skill.name}}</span>
+          <!-- <div class="skill-bar">
+            <div :style="'width: '+skill.level+'%'" class="level"> </div>
+          </div> -->
         </div>
       </div>
-      <div class="projects">
-        <span class="heading">{{lang.projects}}</span>
+      <div class="contact">
+        <span class="heading">{{lang.contact}}</span>
+
       </div>
     </div>
     <div class="right-col">
@@ -48,15 +45,16 @@
         <div class="experience-block" v-for="experience in person.experience" :key="experience.company">
           <span class="company row"> {{experience.company}}, <span class="location">{{experience.location}}</span></span>
           <span class="timeperiod row">{{experience.position}} , {{experience.timeperiod}}</span>
-          <span class="job-description row" v-for="description in experience.description" :key="description"> - {{description}} </span>
+          <span class="about row">{{experience.aboutCompany}}</span>
+          <span class="url row">{{experience.url}}</span>
+          <span class="job-description row" v-for="description in experience.description" :key="description">- {{description}} </span>
         </div>
       </div>
       <div class="achievements">
         <span class="heading">{{lang.achievements}}</span>
-        <i class="fa fa-envelope" aria-hidden="true"></i>
-      </div>
-      <div class="responsibility">
-        <span class="heading">{{lang.responsibility}}</span>
+        <div class="achievements-block" v-for="achievement in person.achievements">
+          <span class="achievement-row"> - {{achievement}}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -75,7 +73,7 @@ export default Vue.component(name, getVueOptions(name));
 <style lang="less" scoped>
 
 html * {
-  font-family: 'Sans Serif'
+  font-family: 'Roboto Light'
 }
 .box {
   padding: 1em 0.5em;
@@ -140,7 +138,6 @@ html * {
   font-weight: 400;
   color: #656565;
   border-bottom: 1px solid #656565;
-  margin-bottom: 0.5em;
   display: inline-block;
 }
 .subheading {
@@ -151,6 +148,7 @@ html * {
   display: inline-block;
 }
 .timeperiod {
+  margin-left: 7px;
   font-size: 15px;
   font-style: italic;
   font-family: 'Roboto Light';
@@ -161,6 +159,7 @@ html * {
   .education-block {
     margin: 7px 0px;
     display: block;
+    margin-bottom: 10px;
     .degree {
       font-weight: 300;
       font-size: 20px;
@@ -178,6 +177,7 @@ html * {
   .experience-block {
     margin: 7px 0px;
     display: block;
+    margin-bottom: 15px;
 
     .company {
       text-transform: uppercase;
@@ -199,6 +199,63 @@ html * {
       text-transform: none;
       font-weight: 200;
       font-size: 15px;
+    }
+    .about {
+      margin-left: 10px;
+      font-weight: 200;
+      font-size: 14px;
+      display: block;
+      color: #333333;
+    }
+    .url {
+      margin-left: 15px;
+      font-weight: 400;
+      font-size: 14px;
+      display: block;
+      font-style: italic;
+      color: #0026ab;
+    }
+  }
+}
+.achievements {
+  .achievements-block {
+    margin: 7px 0px;
+    display: block;
+
+    .achievement-row {
+        font-weight: 200;
+        font-size: 14px;
+        display: block;
+        font-family: 'Roboto Light';
+    }
+  }
+}
+
+.skills {
+  .skills-block {
+    margin: 7px 0px;
+    display: block;
+
+    .skill-row {
+      font-weight: 500;
+      font-size: 18px;
+      display: block;
+      text-transform: uppercase;
+      font-family: 'Roboto Light';
+    }
+    .skill-bar {
+      float:right;
+      background:#e0e0e0;
+      overflow:hidden;
+      height:8px;
+      border-radius:3px;
+      margin-top:6.5px;
+      position:relative;
+      width:100%;
+      .level {
+        background:#00437a;
+        height:100%;
+      }
     }
   }
 }
