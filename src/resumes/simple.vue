@@ -2,7 +2,10 @@
   <div class="box" id="simple">
     <div class="header">
       <div class="row center">
-        <span class="name">{{person.name.first}} {{person.name.middle}} {{person.name.last}}</span>
+        <div style="display:inline-flex">
+          <div class="img"></div>
+          <span class="name" >{{person.name.first}} {{person.name.middle}} {{person.name.last}}</span>
+        </div>
       </div>
       <div class="row center">
         <span class="title">{{person.title}}</span>
@@ -247,11 +250,23 @@ html * {
       margin-top:6.5px;
       position:relative;
       width:100%;
+      margin-bottom: 15px;
       .level {
         background:#007ce2;
         height:100%;
       }
     }
   }
+}
+.img {
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  background-image:url('../../resume/id.jpg');
+  background-repeat:none;
+  background-position:center;
+  background-size:cover;
+  width:60px;
+  height:60px;
 }
 </style>
