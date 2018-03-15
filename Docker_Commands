@@ -1,0 +1,50 @@
+Docker Commands:
+
+Docker : engine, hub, machine, swarm, registry, compose, tutum, stack
+
+kubernetes, DCOS, CoreOS Fleet, Openstack magnum
+
+Docker For Mac : hyperkit, moby, datakit
+
+Docker remote api, daemon -> client
+top level images and second level image
+routing mesh
+
+Docker commands :
+
+Docker version
+docker info
+docker run -d/-it
+docker ps -a
+docker images
+docker rmi <name:tag> / <id>
+docker rm <container>
+docker start <container>
+docker stop <container>
+docker pull
+docker stop $(docker ps -aq)
+docker rmi $(docker images -q)
+
+Swarm : Manager and worker, managers are odd numbers, services, tasks
+Raft concensus protocol
+
+docker swarm init --advertise-addr <ip:2377> --listen-addr <ip:2377>
+docker node ls
+docker node promote
+
+docker service create --name <name> -p <port:port> --replicas 5 <image>
+docker service ps <service name>
+docker service inspect
+docker service update --replicas 10 <service>
+docker sevice scale <service>=7
+docker service inspect --pretty <>
+docker service create --update-parallelism 2 --update-delay 10m
+docker service update --image <image name> --update-parallelism 2 --update-delay 10m
+
+docker network create -d overlay <net_name>
+
+docker push
+docker stack deploy <dabfile>
+docker stack rm <service>
+
+
