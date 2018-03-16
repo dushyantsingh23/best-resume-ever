@@ -42,9 +42,11 @@ docker service create --update-parallelism 2 --update-delay 10m
 docker service update --image <image name> --update-parallelism 2 --update-delay 10m
 
 docker network create -d overlay <net_name>
+docker network create -d bridge <net_name>
 
 docker push
 docker stack deploy <dabfile>
 docker stack rm <service>
 
-
+Service discovery in the same overlay network
+docker service create -d --name <service name> --network <overlay_network> --replicas <num> <image> <command>
