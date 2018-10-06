@@ -8,3 +8,5 @@ import './side-bar-rtl.vue';
 import './left-right-rtl.vue';
 import './pro.vue';
 import './simple.vue';
+import './creative.vue';
+import './cool.vue';

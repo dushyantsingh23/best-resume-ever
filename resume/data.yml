@@ -98,6 +98,26 @@ achievements:
   - All India Engineering Entrance Exam Rank in 2011 was AIR-6072
 knowledge: Also proficient in Adobe Photoshop, After Effects and MS Excel.
 
+projects:
+- name: best-resume-ever
+  platform: Vue
+  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
+  url: https://github.com/salomonelli/best-resume-ever
+
+hobbies:
+- name: Video Games
+  iconClass: fa fa-gamepad
+  url: https://example.com
+
+- name: Drawing
+  iconClass: fa fa-pencil
+  url: https://example.com
+
+contributions:
+- name: best-resume-ever
+  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
+  url: https://github.com/salomonelli/best-resume-ever
+
 contact:
   email: dushyant.bangalore@gmail.com
   phone: +91 8147009478
