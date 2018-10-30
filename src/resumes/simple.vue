@@ -64,7 +64,7 @@
 import Vue from 'vue';
 import { getVueOptions } from './options';
 
-let name = 'simple'; // TODO change name
+const name = 'simple'; // TODO change name
 export default Vue.component(name, getVueOptions(name));
 </script>
 

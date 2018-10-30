@@ -90,6 +90,26 @@
             </a>
           </div>
         </div>
+        <div class="section">
+          <div class="section-headline">
+            <i class="section-headline__icon material-icons">school</i>{{ lang.education }}
+          </div>
+
+          <div class="section-content-edu">
+            <a
+              v-for="(education, index) in person.education"
+              class="section-content-edu__item"
+              :key="index"
+              :href="education.website">
+
+              <span class="section-content__header"> {{ education.school }} </span>
+              <span class="section-content__subheader">{{ education.degree }}</span>
+              <span class="section-content__text"> {{ education.timeperiod }} </span>
+              <span class="section-content__text--light"> {{ education.description }} </span>
+              <br>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="content__right">
@@ -112,27 +132,7 @@
               </span>
 
               <div class="section-content__text">{{ experience.timeperiod }}</div>
-              <span class="section-content__text--light">{{ experience.description }}</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="section">
-          <div class="section-headline">
-            <i class="section-headline__icon material-icons">school</i>{{ lang.education }}
-          </div>
-
-          <div class="section-content">
-            <a
-              v-for="(education, index) in person.education"
-              class="section-content__item"
-              :key="index"
-              :href="education.website">
-
-              <span class="section-content__header"> {{ education.school }} </span>
-              <span class="section-content__subheader">{{ education.degree }}</span>
-              <span class="section-content__text"> {{ education.timeperiod }} </span>
-              <span class="section-content__text--light"> {{ education.description }} </span>
+              <span class="section-content__text--light" v-for="desc in experience.description">- {{ desc }}<br></span>
             </a>
           </div>
         </div>
@@ -225,8 +225,11 @@ a {
   width: @picture-size;
   border-radius: 50%;
   border: 5px solid @accent-color;
-  content: url('../../resume/id.jpg');
+  background-image:url('../../resume/id.jpg');
   z-index: 2;
+  background-repeat:none;
+  background-position:center;
+  background-size:cover;
 }
 
 .banner {
@@ -311,6 +314,52 @@ a {
 .section-content {
   margin-top: 5px;
   padding-left: 32px;
+  font-size: 14px;
+
+  &__item {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &__header {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  &__subheader {
+    display: block;
+    font-weight: 400;
+  }
+
+  &__plain,
+  &__text {
+    display: block;
+    font-size: 12px;
+
+    &--light {
+      font-size: 12px;
+    }
+  }
+
+  &__plain {
+    display: inline;
+    font-weight: 300;
+  }
+
+  &__item-grid {
+    flex: 1 1 0;
+    margin-bottom: 5px;
+    padding-right: 5px;
+  }
+
+  &--plain {
+    padding: 0;
+  }
+}
+
+.section-content_edu {
+  margin-top: 5px;
   font-size: 14px;
 
   &__item {

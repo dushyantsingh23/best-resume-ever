@@ -18,29 +18,34 @@ experience:
   timeperiod: since Nov 2017
   aboutCompany: Adobe builds software for marketing and design
   url: https://status.adobe.com
-  description: [ "Working in a team to deliver product to monitor all services and solutions within adobe. Part of One Adobe initiative"]
+  description: ["Working as a part of small team at Adobe which build tools for TechOps.",
+  "Built solutions for customers to inform them about any outages or maintenance across all Adobe products globally. Taking part in a global initiative in changing the DevOps culture in TechOps at Adobe and shaping it into a Development role.",
+  "Helping other teams in understating our systems and guiding them at their use.",
+  "Mentoring new joiners in understanding our existing systems and helping them in further development.",
+  "Wearing different hats at different times based on the requirements and criticality of the projects.",
+  "Tech Used: Java, SpringBoot, Kafka, DoneJS" ]
 
 - company: GoZefo
   location: Bangalore
   position: Full Stack Developer
-  timeperiod: Nov 2016 - July 2016
+  timeperiod: Sept 2016 - August 2017
   aboutCompany: Ecommerce for second hand goods
   url: www.gozefo.com
-  description: ["Implemented features on website and created and designed new services for warehouse management and logistics. Revamped apis for cart and payments. Worked on Backend as well as Frontend",
-    "Worked on warehouse application to add various functionality for QC, Sell, Inventory, Orders etc",
-    "Worked on Marketing Dashboard which will be used by marketing team to publish real time updates on website",
-    "Design and developed communication server for Zefo which would be responsible for all internal as well as customer communication.",
-    "Tech Used: Java8, Hibernate, Jetty, MySQL, JQuery, EJS, MaterializeCSS, ReactJs, Redux, ImmutableJS, Express, NodeJS v4,Webpack server, npm"]
+  description: ["Worked on building products used in streamlining all warehouse operations thereby increasing the efficiency for customer delivery.",
+  "Worked on revamping consumer website to handle lots of concurrent user, especially during festive sales. Created functionality for flash sales.",
+  "Generated reports for business analysis. Created a service for customer updates and marketing via email and sms. Looked after website health and added monitoring and alerting for backend services",
+  "Tech Used: Java8, Hibernate, Jetty, MySQL, JQuery, EJS, MaterializeCSS, ReactJs, Redux, ImmutableJS, Express, NodeJS v4, Webpack server, npm"]
 
-- company: Encashea (Aquired by HasiruDala)
+- company: Encashea (Aquired by HasiruDala in Sept 2016)
   location: Bangalore
   position: Tech Lead
   timeperiod: Feb 2016 - August 2016
   aboutCompany: Encashea platform helps you encash your scrap at the ease of a few clicks
   url: www.encashea.com
-  description: ["Created Android apps for booking and pickup. Involved in designing and implementing APIs and databases",
-    "Created APIs in Backend(Java, Spring, Hibernate) and respective view in Frontend(jQuery, HTML, CSS) for web. Worked on admin dashboard to add more functionality.",
-    "Tools/Tech used: Android : Java8, Android Framework, Google Maps API, Google Places API, Google distance matrix API, Hibernate, Spring, Postgres, SQL, JQuery, HTML5, Javascript, CSS, Git, Amazon AWS, Redis"]
+  description: ["Worked as Tech lead in a small startup handling and making all technical decisions.",
+  "Encashea App is the consumer facing application which is used to consumers to schedule a pickup and manage their encashea account. Ecpickup is used by our pickup boys for creating invoices.",
+  "Created APIs in Backend and respective view in Frontend for web. Worked on admin dashboard to add more functionality. Special attention given to scalability in designing database",
+  "Tools/Tech used: Android Framework, Google Maps API, Google Places API, Java8, Hibernate, Spring 4, Postgres, SQL, JQuery, HTML5, Javascript, CSS, Git, Amazon AWS, Redis"]
 
 - company: Practo
   location: Bangalore
@@ -88,6 +93,8 @@ skills:
   level: 80
 - name: SQL
   level: 80
+- name: Kafka
+  level: 80
 
 achievements:
   - Qualified in ACM ICPC 2014 Kharagpur Onsite Regionals
@@ -96,33 +103,12 @@ achievements:
   - Second Prize in Technofault at EFFERVESCENCE-2013
   - Designed logo of Effervescence, annual tech and cultural fest of IIIT-Allahabad.
   - All India Engineering Entrance Exam Rank in 2011 was AIR-6072
-knowledge: Also proficient in Adobe Photoshop, After Effects and MS Excel.
-
-projects:
-- name: best-resume-ever
-  platform: Vue
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes and create your best CV ever! Made with Vue and LESS.
-  url: https://github.com/salomonelli/best-resume-ever
-
-hobbies:
-- name: Video Games
-  iconClass: fa fa-gamepad
-  url: https://example.com
-
-- name: Drawing
-  iconClass: fa fa-pencil
-  url: https://example.com
-
-contributions:
-- name: best-resume-ever
-  description: 👔 💼 Build fast 🚀 and easy multiple beautiful resumes.
-  url: https://github.com/salomonelli/best-resume-ever
 
 contact:
   email: dushyant.bangalore@gmail.com
   phone: +91 8147009478
-  website: in.linkedin.com/dushyantsingh23
-  linkedin: in.linkedin.com/dushyantsingh23
+  website: http://dushyantsingh23.in
+  linkedin: dushyantsingh23
   github: dushyantsingh23
   location: Bangalore
 # en, de, fr, pt, ca, cn, it, es, th, pt-br, ru, sv, id, hu, pl, ja, ka, nl, he, zh-tw, lt, ko, el
